@@ -62,6 +62,13 @@ body .container .middle .katha .text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 50px;
+}
+
+body .container .middle .katha .text .dept {
+  -webkit-transform: translateY(105px);
+          transform: translateY(105px);
+  width: 400px;
 }
 
 body .container .bottom {
