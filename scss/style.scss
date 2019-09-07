@@ -32,19 +32,38 @@ body {
         .text {
           flex: 1;
           padding: 50px;
-
-          .dept {
-            transform: translateY(105px);
-            width: 400px;
-          }
         }
       }
     }
     .bottom {
       flex: 1;
+      .pad {
+        padding: 0 120px;
+        .dept {
+          transform: translateY(105px);
+          width: 700px;
+          text-align: center;
+        }
+      }
       .img {
         transform: translateY(302px) rotate(180deg);
       }
     }
+  }
+}
+
+.slideInDown {
+  animation: slideInDown;
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }

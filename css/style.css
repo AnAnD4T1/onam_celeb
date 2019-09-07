@@ -65,20 +65,54 @@ body .container .middle .katha .text {
   padding: 50px;
 }
 
-body .container .middle .katha .text .dept {
-  -webkit-transform: translateY(105px);
-          transform: translateY(105px);
-  width: 400px;
-}
-
 body .container .bottom {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
+body .container .bottom .pad {
+  padding: 0 120px;
+}
+
+body .container .bottom .pad .dept {
+  -webkit-transform: translateY(105px);
+          transform: translateY(105px);
+  width: 700px;
+  text-align: center;
+}
+
 body .container .bottom .img {
   -webkit-transform: translateY(302px) rotate(180deg);
           transform: translateY(302px) rotate(180deg);
+}
+
+.slideInDown {
+  -webkit-animation: slideInDown;
+          animation: slideInDown;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

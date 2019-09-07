@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Happy Onam</title>
   </head>
   <body>
     <div class="container">
       <div class="top">
-        <div class="img"><img src="./assets/Asset 2.svg" alt="" /></div>
+        <div class="img topimg"><img src="./assets/Asset 2.svg" alt="" /></div>
       </div>
       <div class="middle">
         <div class="katha">
           <div class="text">
             <img src="./SVG/Asset 1.svg" alt="" />
-            <img class="dept" src="./SVG/Asset 3.svg" alt="" />
           </div>
           <div class="kali">
             <img src="./assets/Asset 1.svg" alt="" />
@@ -22,9 +22,16 @@
         </div>
       </div>
       <div class="bottom">
+        <div class="pad">
+          <img class="dept" src="./SVG/Asset 3.svg" alt="" />
+        </div>
         <div class="img"><img src="./assets/Asset 2.svg" alt="" /></div>
       </div>
     </div>
     <script src="./js/index.js"></script>
+    <script>
+      const element = document.querySelector(".topimg");
+      element.classList.add("slideInDown");
+    </script>
   </body>
 </html>
