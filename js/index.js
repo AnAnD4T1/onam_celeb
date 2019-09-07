@@ -51,7 +51,7 @@ function Cannon(x, y, width, height, color) {
   this.width = width;
   this.height = height;
   this.angle = 0;
-  this.color = color;
+  this.color = "rgba(255, 223, 87, 1)";
 
   this.update = function() {
     desiredAngle = Math.atan2(mouse.y - this.y, mouse.x - this.x);
@@ -66,7 +66,7 @@ function Cannon(x, y, width, height, color) {
     c.beginPath();
     c.fillStyle = this.color;
     c.shadowColor = this.color;
-    c.shadowBlur = 3;
+    c.shadowBlur = 5;
     c.shadowOffsetX = 0;
     c.shadowOffsetY = 0;
     c.fillRect(0, -this.height / 2, this.width, height);
@@ -84,7 +84,7 @@ function Cannonball(x, y, dx, dy, radius, color, cannon, particleColors) {
   this.color = color;
   this.particleColors = particleColors;
   this.source = cannon;
-  this.timeToLive = canvas.height / (canvas.height + 800);
+  this.timeToLive = 1.2;
 
   this.init = function() {
     // Initialize the cannonballs start coordinates (from muzzle of cannon)
@@ -205,7 +205,7 @@ function Explosion(cannonball) {
           this.source.y,
           dx,
           dy,
-          1,
+          50,
           randomParticleColor
         )
       );
@@ -239,7 +239,7 @@ function Explosion(cannonball) {
   };
 }
 
-var gravity = 0.08;
+var gravity = 0.002;
 var desiredAngle = 0;
 var cannon, cannonballs, explosions, colors;
 
@@ -265,7 +265,7 @@ var introTimer = 0;
 function animate() {
   window.requestAnimationFrame(animate);
 
-  c.fillStyle = "rgba(18, 18, 18, 0.2)";
+  c.fillStyle = "rgba(255, 223, 87, 1)";
   c.fillRect(0, 0, canvas.width, canvas.height);
   cannon.update();
 

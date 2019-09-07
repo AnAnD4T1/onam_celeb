@@ -3,4 +3,75 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
+body .container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffdf57;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .top {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .top .img {
+  -webkit-transform: translateY(-189px);
+          transform: translateY(-189px);
+}
+
+body .container .middle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .middle .katha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .middle .katha .kali {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+body .container .middle .katha .kali img {
+  -webkit-transform: translateX(239px);
+          transform: translateX(239px);
+  z-index: 1;
+}
+
+body .container .middle .katha .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .bottom .img {
+  -webkit-transform: translateY(395px) rotate(180deg);
+          transform: translateY(395px) rotate(180deg);
+}
 /*# sourceMappingURL=style.css.map */

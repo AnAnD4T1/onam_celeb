@@ -2,4 +2,43 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  .container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 223, 87);
+    display: flex;
+    flex-direction: column;
+    .top {
+      flex: 1;
+      .img {
+        transform: translateY(-189px);
+      }
+    }
+    .middle {
+      flex: 1;
+      .katha {
+        display: flex;
+        flex-direction: row;
+        .kali {
+          flex: 1;
+          overflow: hidden;
+          img {
+            transform: translateX(239px);
+            z-index: 1;
+          }
+        }
+        .text {
+          flex: 1;
+        }
+      }
+    }
+    .bottom {
+      flex: 1;
+      .img {
+        transform: translateY(395px) rotate(180deg);
+      }
+    }
+  }
 }
